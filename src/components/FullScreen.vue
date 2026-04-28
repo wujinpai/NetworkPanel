@@ -7,7 +7,7 @@
         <div class="content">
             <div class="left">
                 <div class="title">
-                    <span>NetworkPanel</span>
+                    <span>网络测试</span>
                 </div>
                 <div class="time">
                     <span>{{ time }}</span>
