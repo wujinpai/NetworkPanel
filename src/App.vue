@@ -21,47 +21,6 @@
       <IPinfoUI :isVisible="isVisible" />
     </el-main>
   </el-container>
-  <el-dialog style="width: 90%;max-width: 400px;" v-model="aboutVisible" title="关于">
-    <div>
-      <h2>网络面板</h2>
-      <span>作者：<el-link @click='open("https://netart.cn/")' type="primary">Whoami</el-link></span><br>
-      <span>QQ：<el-link type="primary" @click="copyText('582424565')">582424565 </el-link></span><br>
-      <span>QQ群：<el-link type="primary" @click="copyText('463481772')">463481772 </el-link></span><br>
-      <span>开源地址：<el-link @click='open("https://github.com/ljxi/NetworkPanel")' type="primary">NetworkPanel</el-link>&nbsp;
-        <el-link @click='open("https://github.com/ljxi/GeoCN")' type="primary">GeoCN</el-link>
-      </span><br> 
-      <span>特别感谢：</span><br>
-      <el-link @click='open("https://edgeone.ai/zh?from=net.netart.cn")' type="primary">Tencent Edgeone</el-link><span>提供免费稳定无限量的CDN服务</span><br>
-      <el-link @click='open("https://www.kuocaicdn.com/register?code=8z8urvbg2ffd9")' type="primary">括彩科技</el-link><span>提供免费稳定的CDN服务</span><br>
-      <br>
-      <span>本项目用到的开源库:</span><br>
-      <el-link @click='open("https://github.com/vuejs/core")' type="primary">Vue</el-link>&nbsp
-      <el-link @click='open("https://github.com/element-plus/element-plus")' type="primary">ElementPlus</el-link>&nbsp
-      <el-link @click='open("https://github.com/apache/echarts")' type="primary">echarts</el-link>&nbsp
-      <el-link @click='open("https://github.com/richtr/NoSleep.js")' type="primary">NoSleep.js</el-link>&nbsp
-      <el-link @click='open("https://github.com/soerenmartius/vue3-clipboard")' type="primary">vue3-clipboard</el-link>&nbsp
-    </div>
-    <div>
-      <h2>疑问解答</h2>
-      <div class="question">
-        <span class="ask">问：APP/后端代码开源吗？</span><br>
-        <span class="answer">答：不开源</span><br>
-      </div>
-      <div class="question">
-        <span class="ask">问：我搭建了一个前端页面，能否添加到跨域白名单？</span><br>
-        <span class="answer">答：你需要有一定的用户量，并添加链接指向本项目开源仓库，然后联系我加白名单</span><br>
-      </div>
-      <div class="question">
-        <span class="ask">问：能否添加xxx功能？</span><br>
-        <span class="answer">答：有合理的建议请联系我</span><br>
-      </div>
-    </div>
-    <template #footer>
-      <span class="dialog-footer">
-        <el-button @click="aboutVisible = false">关闭</el-button>
-      </span>
-    </template>
-  </el-dialog>
 </template>
 
 <script lang="ts" setup>
